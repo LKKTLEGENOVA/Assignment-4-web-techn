@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="#home" class="nav-link active" aria-current="page">Home</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#hobbies" class="nav-link">Hobbies</a></li>
+          <li class="nav-item"><a href="#contacts" class="nav-link">Contact me</a></li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Travel Gallery</a></li>
+          <li class="nav-item"><a href="js.html" class="nav-link">JS</a></li>
+        </ul>
+      </header>
+
+      <div class="container">
+        <h1 class="text-center">Interactive Features</h1>
+        
+        <!-- Button Section -->
+        <div class="text-center my-4">
+            <button onclick="changeBgColor()" class="btn btn-primary">Change Background Color</button>
+            <button onclick="showAlert()" class="btn btn-success">Show Alert</button>
+            <button onclick="changeImage()" class="btn btn-warning">Change Image</button>
+        </div>
+        
+        <div class="text-center">
+            <img id="randomImage" src="./img/photo.jpg" class="img-fluid" alt="Default Image" style="width: 300px; height: 300px; object-fit: cover;">
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+
+
+      <header class="header" id="home">
+        <div class="container">
+            <div class="header-row">
+                
+                <img src="/img/photo.jpg" srcset="/img/photo@2x.jpg 2x"   alt="Photo" class="header-img">
+
+
+                <div class="header-desc">
+                    <h1 class="header-title">Kamilya Tlegenova</h1>
+                    <p class="header-text">Web Developer</p>
+                                  
+                </div>
+
+            </div>
+        </div>
+    </header>    
+     
+<main>
+    <section class="portfolio" id="projects">
+        <div class="container">
+            <h2 class="portfolio-title">Projects</h2>
+        <div class="projects">
+            <div class="project"> 
+                <a href="https://zantech.kz/">
+                <img src="./portfolio/project-01.jpg" srcset="./portfolio/project-01@2x.jpg 
+                2x" alt="A platform for finding lawyers" class="project-img">
+            </a>
+                <h3 class="project-title"><a href="https://zantech.kz/"> A platform for finding lawyers</a></h3>
+
+            </div>
+            
+            <div class="project"> 
+                <a href="https://kzlegal.kz/">
+                <img src="./portfolio/project-02.jpg" srcset="./portfolio/project-02@2x.jpg 
+                2x" alt="The website of the law firm" class="project-img">
+            </a>
+                <h3 class="project-title"><a href="https://kzlegal.kz/"> The website of the law firm</a></h3>
+
+            </div>
+        </div>
+        </div>
+    
+    </section>
+
+    <div class="hobbies" id="hobbies">
+
+        <!-- Three columns of text below the carousel -->
+        <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="./web design/dance.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Dance">
+                <h2 class="fw-normal">Dance</h2>
+                <p>I have been passionate about dancing since childhood, engaging in ballroom, folk, and contemporary styles. From the ages of 14 to 17, I worked as a dance coach, sharing my love for movement and expression with others.</p>
+                <p><a class="btn btn-secondary" href="#details1">View details »</a></p>
+            </div>
+
+            
+                <div class="col-lg-4">
+                    <img src="./web design/web des.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Web">
+                    <h2 class="fw-normal">Web design</h2>
+                    <p>I maintain a regular fitness routine, attending strength and cardio workouts at least three times a week. This commitment to physical health helps me stay fit and energized.</p>
+                    <p><a class="btn btn-secondary" href="#details2">View details »</a></p>
+                </div>
+
+                
+                    <div class="col-lg-4">
+                        <img src="./web design/gym.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" alt="Dance">
+                        <h2 class="fw-normal">Gym</h2>
+                        <p>I recently discovered the field of web design and am excited about the possibilities it offers. I am eager to develop my skills and creativity in this area.</p>
+                        <p><a class="btn btn-secondary" href="#details3">View details »</a></p>
+                    </div>
+                </div>
+        
+    
+        <!-- START THE FEATURETTES -->
+    
+        <hr class="featurette-divider">
+
+<div class="row featurette" id="details1">
+    <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Dance <span class="text-body-secondary"></span></h2>
+        <p class="lead">My passion for dancing began in childhood, where I explored various styles, including ballroom, folk, and contemporary dance. This journey not only allowed me to express my creativity but also instilled a strong sense of discipline and teamwork. From the ages of 14 to 17, I had the privilege of working as a dance coach, where I taught students of different ages and skill levels. This experience deepened my appreciation for dance and helped me develop leadership skills, as I guided my students to achieve their goals while fostering a supportive environment.</p>
+    </div>
+    <div class="col-md-5">
+        <img src="./web design/dance.jpg" class="featurette-image img-fluid mx-auto" alt="Dance" style="width: 500px; height: 500px; object-fit: cover;">
+    </div>
+</div>
+
+
+<hr class="featurette-divider">
+
+<div class="row featurette" id="details2">
+    <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading fw-normal lh-1">Web Design<span class="text-body-secondary"></span></h2>
+        <p class="lead">I recently embarked on a journey into the world of web design, and it has sparked a newfound passion within me. I am fascinated by the intersection of creativity and technology, and I am eager to learn more about user experience, layout design, and coding. I am currently taking online courses and experimenting with my own projects to develop my skills further. This field offers endless opportunities for creativity, and I look forward to building a portfolio that reflects my growth and interests.
+
+        </p>
+    </div>
+    <div class="col-md-5 order-md-1">
+        <img src="./web design/web des.jpg" class="featurette-image img-fluid mx-auto" alt="Description of the image" style="width: 500px; height: 500px; object-fit: cover;">
+    </div>
+</div>
+
+    
+<hr class="featurette-divider">
+
+<div class="row featurette" id="details3">
+    <div class="col-md-7">
+        <h2 class="featurette-heading fw-normal lh-1">Gym <span class="text-body-secondary"></span></h2>
+        <p class="lead">Physical fitness plays a crucial role in my life. I make it a priority to attend strength and cardio workouts at least three times a week. This commitment not only helps me maintain my health and vitality but also serves as a powerful stress reliever. I enjoy setting personal fitness goals and tracking my progress, as it motivates me to push my limits and embrace a balanced lifestyle.</p>
+    </div>
+    <div class="col-md-5">
+        <img src="./web design/gym.jpg" class="featurette-image img-fluid mx-auto" alt="Description of the image" style="width: 500px; height: 500px; object-fit: cover;">
+    </div>
+</div>
+
+<hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+    
+        <section class="content-block mb-4" id="contact">
+
+
+<!-- contact section  start -->
+<section class="content-block mb-4" id="contact">
+    <h2>Contact me</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="c8c6e690-f6c8-4e45-bfb1-93f72b71c354">
+        <div class="mb-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="mb-3">
+            <label for="number" class="form-label">Number:</label>
+            <input type ="number" class="form-control" id="number" name="number" required>
+        </div>
+        <input type="submit" class="btn btn-primary" value="Send">
+    </form>
+</section>
+<section class="content-block mb-4" id="contacts">
+    <h2>Contacts</h2>
+    <ul>
+        <li><a href="https://instagram.com/kkamiixx" target="_blank"><i class="inst"></i> Instagram </a></li>
+        <li><a href="https://t.me/kmltl" target="_blank"><i class="telegram"></i> Telegram </a></li>
+    </ul>
+</main>
+</body>
+</html>

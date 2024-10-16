@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple To-Do List and Tools</title>
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+</head>
+<body>
+    <!-- To-Do List Section -->
+    <div class="section todo-list">
+        <h1>My To-Do List</h1>
+        <input type="text" id="newTask" placeholder="Add a new task">
+        <button onclick="addTask()">Add Task</button>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Number Sorting Tool Section -->
+    <div class="section sorting-tool">
+        <h1 class="text-center my-4">Number Sorting Tool</h1>
+
+        <!-- Input and Sorting Options -->
+        <div class="input-group mb-3">
+            <input type="text" id="numbersInput" class="form-control" placeholder="Enter numbers separated by commas">
+            <select id="sortOrder" class="form-select">
+                <option value="asc">Ascending</option>
+                <option value="desc">Descending</option>
+            </select>
+            <button onclick="sortNumbers()" class="btn btn-primary">Sort</button>
+        </div>
+
+        <!-- Result Display -->
+        <div id="result" class="mt-4">
+            <h3 class="text-center">Sorted Numbers: <span id="sortedNumbers"></span></h3>
+        </div>
+    </div>
+
+    <!-- Simple Calculator Section -->
+    <div class="section calculator-box">
+        <input type="text" id="display" class="display form-control" disabled>
+
+        <!-- Calculator Buttons -->
+        <div class="text-center">
+            <button class="btn btn-primary" onclick="clearDisplay()">C</button>
+            <button class="btn btn-primary" onclick="deleteLast()">DEL</button>
+            <button class="btn btn-operation" onclick="appendToDisplay('%')">%</button>
+            <button class="btn btn-operation" onclick="appendToDisplay('/')">/</button><br>
+
+            <button class="btn btn-primary" onclick="appendToDisplay('7')">7</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('8')">8</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('9')">9</button>
+            <button class="btn btn-operation" onclick="appendToDisplay('*')">*</button><br>
+
+            <button class="btn btn-primary" onclick="appendToDisplay('4')">4</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('5')">5</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('6')">6</button>
+            <button class="btn btn-operation" onclick="appendToDisplay('-')">-</button><br>
+
+            <button class="btn btn-primary" onclick="appendToDisplay('1')">1</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('2')">2</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('3')">3</button>
+            <button class="btn btn-operation" onclick="appendToDisplay('+')">+</button><br>
+
+            <button class="btn btn-primary" onclick="appendToDisplay('0')">0</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('.')">.</button>
+            <button class="btn btn-primary" onclick="appendToDisplay('^')">^</button>
+            <button class="btn btn-success" onclick="calculate()">=</button>
+        </div>
+    </div>
+
+    <!-- Car Tax Calculator Section -->
+    <div class="section tax-wrapper">
+        <h2 class="text-center">Car Tax Calculator</h2>
+
+        <div class="tax-box">
+            <form id="taxForm">
+                <label for="price">Enter the price of the car (in $):</label>
+                <input type="number" id="price" class="display form-control" placeholder="Car price" required>
+
+                <button type="button" class="btn btn-success" onclick="calculateTax()">Calculate Tax</button>
+
+                <h3 class="result" id="result"></h3>
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
